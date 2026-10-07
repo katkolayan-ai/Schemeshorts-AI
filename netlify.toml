@@ -1,5 +1,11 @@
 [build]
-  publish = "site"
+  publish = "."
 
 [functions]
-  directory = "netlify/functions"
+  directory = "."
+
+[[redirects]]
+  from = "/tts.mjs"
+  to = "/404"
+  status = 404
+  force = true
